@@ -26,3 +26,13 @@ Function variables should be stacked together per type, to prep gas-saving habit
             uint256 milestones,
             uint256 termination,
             bytes32 details)
+## Structs
+
+The objects included in structs should also be grouped logically and by type in order to save on gas costs. We recommend starting with addresses, then uints, then bytes and bools. 
+
+    struct Action {
+        address proposer;
+        address to;
+        uint256 value;
+        bytes data;
+    }
