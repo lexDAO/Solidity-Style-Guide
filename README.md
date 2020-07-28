@@ -1,4 +1,4 @@
-# Solidity Style Guild
+# Solidity Style Guide
 solidity style tips for legal engineering drafting
 
 ## Events
@@ -6,7 +6,7 @@ solidity style tips for legal engineering drafting
 Events should be ordered in logical flow or chronology, as they often can paint a picture of how deals progress:
 
     event RegisterLocker(address indexed client, address[] indexed provider, address indexed resolver, address token, uint256[] amount, uint256 cap, uint256 index, uint256 termination, bytes32 details);	
-    event DepositLocker(uint256 indexed index, uint256 indexed cap);  
+    event DepositLocker(uint256 indexed index, uint256 indexed sum);  
     event Release(uint256 indexed index, uint256[] indexed milestone); 
     event Withdraw(uint256 indexed index, uint256 indexed remainder);
     event Lock(address indexed sender, uint256 indexed index, bytes32 indexed details);
