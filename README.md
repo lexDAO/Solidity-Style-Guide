@@ -17,12 +17,12 @@ Events should be ordered in logical flow or chronology, as they often can paint 
 Function variables should be stacked together per type, to prep gas-saving habit of "[variable packing](https://mudit.blog/solidity-gas-optimization-tips/)." Logical, and if possible, alphabetic order is preferred for consistency. Header comment to explain purpose and expected outcome of function is also recommended:
 
         function registerLocker( // register locker for token deposit and client deal confirmation
-        address client,
-        address[] calldata provider,
-        address resolver,
-        address token,
-        uint256[] calldata amount, 
-        uint256 cap,
-        uint256 milestones,
-        uint256 termination,
-        bytes32 details)
+            address client,
+            address[] calldata provider,
+            address resolver,
+            address token,
+            uint256[] calldata amount, 
+            uint256 cap,
+            uint256 milestones,
+            uint256 termination,
+            bytes32 details)
